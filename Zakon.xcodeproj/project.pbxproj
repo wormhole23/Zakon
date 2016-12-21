@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8FEF9BB1E0A481B00C94CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9BA1E0A481B00C94CD1 /* AppDelegate.swift */; };
+		B8FEF9BD1E0A481B00C94CD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9BC1E0A481B00C94CD1 /* ViewController.swift */; };
+		B8FEF9C01E0A481B00C94CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FEF9BE1E0A481B00C94CD1 /* Main.storyboard */; };
+		B8FEF9C21E0A481C00C94CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FEF9C11E0A481C00C94CD1 /* Assets.xcassets */; };
+		B8FEF9C51E0A481C00C94CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FEF9C31E0A481C00C94CD1 /* LaunchScreen.storyboard */; };
+		B8FEF9D01E0A481C00C94CD1 /* ZakonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9CF1E0A481C00C94CD1 /* ZakonTests.swift */; };
+		B8FEF9DB1E0A481C00C94CD1 /* ZakonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9DA1E0A481C00C94CD1 /* ZakonUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8FEF9CC1E0A481C00C94CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8FEF9AF1E0A481B00C94CD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8FEF9B61E0A481B00C94CD1;
+			remoteInfo = Zakon;
+		};
+		B8FEF9D71E0A481C00C94CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8FEF9AF1E0A481B00C94CD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8FEF9B61E0A481B00C94CD1;
+			remoteInfo = Zakon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B8FEF9B71E0A481B00C94CD1 /* Zakon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zakon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FEF9BA1E0A481B00C94CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8FEF9BC1E0A481B00C94CD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8FEF9BF1E0A481B00C94CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8FEF9C11E0A481C00C94CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8FEF9C41E0A481C00C94CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8FEF9C61E0A481C00C94CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8FEF9CB1E0A481C00C94CD1 /* ZakonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZakonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FEF9CF1E0A481C00C94CD1 /* ZakonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZakonTests.swift; sourceTree = "<group>"; };
+		B8FEF9D11E0A481C00C94CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8FEF9D61E0A481C00C94CD1 /* ZakonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZakonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FEF9DA1E0A481C00C94CD1 /* ZakonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZakonUITests.swift; sourceTree = "<group>"; };
+		B8FEF9DC1E0A481D00C94CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8FEF9B41E0A481B00C94CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FEF9C81E0A481C00C94CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FEF9D31E0A481C00C94CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8FEF9AE1E0A481B00C94CD1 = {
+			isa = PBXGroup;
+			children = (
+				B8FEF9B91E0A481B00C94CD1 /* Zakon */,
+				B8FEF9CE1E0A481C00C94CD1 /* ZakonTests */,
+				B8FEF9D91E0A481C00C94CD1 /* ZakonUITests */,
+				B8FEF9B81E0A481B00C94CD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8FEF9B81E0A481B00C94CD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8FEF9B71E0A481B00C94CD1 /* Zakon.app */,
+				B8FEF9CB1E0A481C00C94CD1 /* ZakonTests.xctest */,
+				B8FEF9D61E0A481C00C94CD1 /* ZakonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8FEF9B91E0A481B00C94CD1 /* Zakon */ = {
+			isa = PBXGroup;
+			children = (
+				B8FEF9BA1E0A481B00C94CD1 /* AppDelegate.swift */,
+				B8FEF9BC1E0A481B00C94CD1 /* ViewController.swift */,
+				B8FEF9BE1E0A481B00C94CD1 /* Main.storyboard */,
+				B8FEF9C11E0A481C00C94CD1 /* Assets.xcassets */,
+				B8FEF9C31E0A481C00C94CD1 /* LaunchScreen.storyboard */,
+				B8FEF9C61E0A481C00C94CD1 /* Info.plist */,
+			);
+			path = Zakon;
+			sourceTree = "<group>";
+		};
+		B8FEF9CE1E0A481C00C94CD1 /* ZakonTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8FEF9CF1E0A481C00C94CD1 /* ZakonTests.swift */,
+				B8FEF9D11E0A481C00C94CD1 /* Info.plist */,
+			);
+			path = ZakonTests;
+			sourceTree = "<group>";
+		};
+		B8FEF9D91E0A481C00C94CD1 /* ZakonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B8FEF9DA1E0A481C00C94CD1 /* ZakonUITests.swift */,
+				B8FEF9DC1E0A481D00C94CD1 /* Info.plist */,
+			);
+			path = ZakonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8FEF9B61E0A481B00C94CD1 /* Zakon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8FEF9DF1E0A481D00C94CD1 /* Build configuration list for PBXNativeTarget "Zakon" */;
+			buildPhases = (
+				B8FEF9B31E0A481B00C94CD1 /* Sources */,
+				B8FEF9B41E0A481B00C94CD1 /* Frameworks */,
+				B8FEF9B51E0A481B00C94CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zakon;
+			productName = Zakon;
+			productReference = B8FEF9B71E0A481B00C94CD1 /* Zakon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8FEF9CA1E0A481C00C94CD1 /* ZakonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8FEF9E21E0A481D00C94CD1 /* Build configuration list for PBXNativeTarget "ZakonTests" */;
+			buildPhases = (
+				B8FEF9C71E0A481C00C94CD1 /* Sources */,
+				B8FEF9C81E0A481C00C94CD1 /* Frameworks */,
+				B8FEF9C91E0A481C00C94CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8FEF9CD1E0A481C00C94CD1 /* PBXTargetDependency */,
+			);
+			name = ZakonTests;
+			productName = ZakonTests;
+			productReference = B8FEF9CB1E0A481C00C94CD1 /* ZakonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8FEF9D51E0A481C00C94CD1 /* ZakonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8FEF9E51E0A481D00C94CD1 /* Build configuration list for PBXNativeTarget "ZakonUITests" */;
+			buildPhases = (
+				B8FEF9D21E0A481C00C94CD1 /* Sources */,
+				B8FEF9D31E0A481C00C94CD1 /* Frameworks */,
+				B8FEF9D41E0A481C00C94CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8FEF9D81E0A481C00C94CD1 /* PBXTargetDependency */,
+			);
+			name = ZakonUITests;
+			productName = ZakonUITests;
+			productReference = B8FEF9D61E0A481C00C94CD1 /* ZakonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8FEF9AF1E0A481B00C94CD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = AA;
+				TargetAttributes = {
+					B8FEF9B61E0A481B00C94CD1 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					B8FEF9CA1E0A481C00C94CD1 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B8FEF9B61E0A481B00C94CD1;
+					};
+					B8FEF9D51E0A481C00C94CD1 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B8FEF9B61E0A481B00C94CD1;
+					};
+				};
+			};
+			buildConfigurationList = B8FEF9B21E0A481B00C94CD1 /* Build configuration list for PBXProject "Zakon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8FEF9AE1E0A481B00C94CD1;
+			productRefGroup = B8FEF9B81E0A481B00C94CD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8FEF9B61E0A481B00C94CD1 /* Zakon */,
+				B8FEF9CA1E0A481C00C94CD1 /* ZakonTests */,
+				B8FEF9D51E0A481C00C94CD1 /* ZakonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8FEF9B51E0A481B00C94CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FEF9C51E0A481C00C94CD1 /* LaunchScreen.storyboard in Resources */,
+				B8FEF9C21E0A481C00C94CD1 /* Assets.xcassets in Resources */,
+				B8FEF9C01E0A481B00C94CD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FEF9C91E0A481C00C94CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FEF9D41E0A481C00C94CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8FEF9B31E0A481B00C94CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FEF9BD1E0A481B00C94CD1 /* ViewController.swift in Sources */,
+				B8FEF9BB1E0A481B00C94CD1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FEF9C71E0A481C00C94CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FEF9D01E0A481C00C94CD1 /* ZakonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FEF9D21E0A481C00C94CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FEF9DB1E0A481C00C94CD1 /* ZakonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8FEF9CD1E0A481C00C94CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8FEF9B61E0A481B00C94CD1 /* Zakon */;
+			targetProxy = B8FEF9CC1E0A481C00C94CD1 /* PBXContainerItemProxy */;
+		};
+		B8FEF9D81E0A481C00C94CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8FEF9B61E0A481B00C94CD1 /* Zakon */;
+			targetProxy = B8FEF9D71E0A481C00C94CD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B8FEF9BE1E0A481B00C94CD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8FEF9BF1E0A481B00C94CD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8FEF9C31E0A481C00C94CD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8FEF9C41E0A481C00C94CD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8FEF9DD1E0A481D00C94CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8FEF9DE1E0A481D00C94CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8FEF9E01E0A481D00C94CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Zakon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AA.Zakon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B8FEF9E11E0A481D00C94CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Zakon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AA.Zakon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B8FEF9E31E0A481D00C94CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZakonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AA.ZakonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zakon.app/Zakon";
+			};
+			name = Debug;
+		};
+		B8FEF9E41E0A481D00C94CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZakonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AA.ZakonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zakon.app/Zakon";
+			};
+			name = Release;
+		};
+		B8FEF9E61E0A481D00C94CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ZakonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AA.ZakonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Zakon;
+			};
+			name = Debug;
+		};
+		B8FEF9E71E0A481D00C94CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ZakonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AA.ZakonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Zakon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8FEF9B21E0A481B00C94CD1 /* Build configuration list for PBXProject "Zakon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FEF9DD1E0A481D00C94CD1 /* Debug */,
+				B8FEF9DE1E0A481D00C94CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8FEF9DF1E0A481D00C94CD1 /* Build configuration list for PBXNativeTarget "Zakon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FEF9E01E0A481D00C94CD1 /* Debug */,
+				B8FEF9E11E0A481D00C94CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B8FEF9E21E0A481D00C94CD1 /* Build configuration list for PBXNativeTarget "ZakonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FEF9E31E0A481D00C94CD1 /* Debug */,
+				B8FEF9E41E0A481D00C94CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B8FEF9E51E0A481D00C94CD1 /* Build configuration list for PBXNativeTarget "ZakonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FEF9E61E0A481D00C94CD1 /* Debug */,
+				B8FEF9E71E0A481D00C94CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8FEF9AF1E0A481B00C94CD1 /* Project object */;
+}

@@ -16,6 +16,7 @@
 		B8FEF9DB1E0A481C00C94CD1 /* ZakonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9DA1E0A481C00C94CD1 /* ZakonUITests.swift */; };
 		B8FEF9E91E0BDA3D00C94CD1 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9E81E0BDA3D00C94CD1 /* QuestionsViewController.swift */; };
 		B8FEF9EB1E0BE39000C94CD1 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9EA1E0BE39000C94CD1 /* ResultViewController.swift */; };
+		CE66E5F91E0D6E1100B06650 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE66E5F81E0D6E1100B06650 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B8FEF9DC1E0A481D00C94CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8FEF9E81E0BDA3D00C94CD1 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		B8FEF9EA1E0BE39000C94CD1 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		CE66E5F81E0D6E1100B06650 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				B8FEF9C61E0A481C00C94CD1 /* Info.plist */,
 				B8FEF9E81E0BDA3D00C94CD1 /* QuestionsViewController.swift */,
 				B8FEF9EA1E0BE39000C94CD1 /* ResultViewController.swift */,
+				CE66E5F81E0D6E1100B06650 /* logo.png */,
 			);
 			path = Zakon;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE66E5F91E0D6E1100B06650 /* logo.png in Resources */,
 				B8FEF9C51E0A481C00C94CD1 /* LaunchScreen.storyboard in Resources */,
 				B8FEF9C21E0A481C00C94CD1 /* Assets.xcassets in Resources */,
 				B8FEF9C01E0A481B00C94CD1 /* Main.storyboard in Resources */,
@@ -511,6 +515,7 @@
 				B8FEF9E11E0A481D00C94CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8FEF9E21E0A481D00C94CD1 /* Build configuration list for PBXNativeTarget "ZakonTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +524,7 @@
 				B8FEF9E41E0A481D00C94CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8FEF9E51E0A481D00C94CD1 /* Build configuration list for PBXNativeTarget "ZakonUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +533,7 @@
 				B8FEF9E71E0A481D00C94CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

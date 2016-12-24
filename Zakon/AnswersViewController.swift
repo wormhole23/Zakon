@@ -1,16 +1,15 @@
 //
-//  QuestionsViewController.swift
+//  AnswersViewController.swift
 //  Zakon
 //
-//  Created by assel on 12/22/16.
+//  Created by assel on 12/24/16.
 //  Copyright © 2016 AA. All rights reserved.
 //
 
 import UIKit
 
-class QuestionsViewController: UIViewController {
+class AnswersViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +21,7 @@ class QuestionsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func nextButtonPressed(_ sender: UIButton) {
+    @IBAction func backButtonPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "toResultVC", sender: nil)
     }
 

@@ -93,13 +93,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfu-oH-Kc3">
+                                <frame key="frameInset" minX="153" minY="257" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dalee"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="xsJ-lL-pUs" eventType="touchUpInside" id="jmk-0Q-7Mn"/>
+                                    <segue destination="5ue-Zc-6Uj" kind="show" identifier="toResultVC" id="7fi-bJ-BKV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="82T-pd-Gt2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901.60000000000002" y="123.68815592203899"/>
+            <point key="canvasLocation" x="895" y="383"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="TUU-S3-gg6">
@@ -112,15 +121,67 @@
                     <view key="view" contentMode="scaleToFill" id="n9f-Az-b9A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWB-A3-GDm">
+                                <frame key="frameInset" minX="105" minY="368" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Otvety"/>
+                                <connections>
+                                    <action selector="answersButton:" destination="5ue-Zc-6Uj" eventType="touchUpInside" id="tn4-ge-CGv"/>
+                                    <segue destination="euP-DZ-zqN" kind="show" identifier="toAnswersVC" id="82R-IS-SeC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qx-38-EgQ">
+                                <frame key="frameInset" minX="114" minY="441" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="menu"/>
+                                <connections>
+                                    <action selector="menuButton:" destination="5ue-Zc-6Uj" eventType="touchUpInside" id="Uuu-kz-Org"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toMenuVC" id="8Bu-gV-D7g"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBg-YT-Cf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1628" y="130"/>
+            <point key="canvasLocation" x="1583" y="-172"/>
+        </scene>
+        <!--Answers View Controller-->
+        <scene sceneID="7Xr-Cd-6l2">
+            <objects>
+                <viewController id="euP-DZ-zqN" customClass="AnswersViewController" customModule="Zakon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bDW-Ne-NI4"/>
+                        <viewControllerLayoutGuide type="bottom" id="t6j-oA-Boe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i7j-Gu-EXM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0n-kj-zYh">
+                                <frame key="frameInset" minX="18" minY="10" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="nazad"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="euP-DZ-zqN" eventType="touchUpInside" id="CjJ-Hd-dmS"/>
+                                    <segue destination="5ue-Zc-6Uj" kind="show" identifier="toResultVC" id="mam-7Y-9nn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8o3-dJ-9tH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2497" y="-201"/>
         </scene>
     </scenes>
     <resources>
         <image name="logo.png" width="963" height="963"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mam-7Y-9nn"/>
+    </inferredMetricsTieBreakers>
 </document>

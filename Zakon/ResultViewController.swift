@@ -21,6 +21,13 @@ class ResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func answersButton(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "toAnswersVC", sender: nil)
+    }
+    
+    @IBAction func menuButton(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "toMenuVC", sender: nil)
+    }
 
     /*
     // MARK: - Navigation

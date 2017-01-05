@@ -26,7 +26,11 @@ class QuestionsViewController: UIViewController {
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "toResultVC", sender: nil)
+        if(questionIndex==10){
+            self.performSegue(withIdentifier: "toResultVC", sender: nil)
+        }else{
+            showNextQuestion()
+        }
     }
     
     func populateQuestions() {
@@ -50,13 +54,20 @@ class QuestionsViewController: UIViewController {
     
     func showNextQuestion() {
         // Выводит на view следующий вопрос по индексу
-        questionText.text = questions[0].question
-        print(questions[0].question)
+        questionIndex = questionIndex+1
+        questionText.text = questions[questionIndex].question
+        //var1.text = questions[questionIndex].varinats?[0]
+        //var2.text = questions[questionIndex].varinats?[1]
+        //var3.text = questions[questionIndex].varinats?[2]
     }
     
     func showPrevQuestion(){
         // Выводит на view предыдущий вопрос по индексу
-        
+        questionIndex = questionIndex-1
+        questionText.text = questions[questionIndex].question
+        //var1.text = questions[questionIndex].varinats?[0]
+        //var2.text = questions[questionIndex].varinats?[1]
+        //var3.text = questions[questionIndex].varinats?[2]
     }
 
 

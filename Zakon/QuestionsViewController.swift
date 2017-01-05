@@ -11,7 +11,7 @@ import UIKit
 class QuestionsViewController: UIViewController {
 
     @IBOutlet weak var questionText: UITextView!
-    var questions: [Question]?
+    var questions = [Question]()
     var questionIndex = -1
     
     override func viewDidLoad() {
@@ -42,16 +42,16 @@ class QuestionsViewController: UIViewController {
         q2.varinats = ["Да", "Нет"]
         q2.rightAnswer = "Нет"
         
-        questions?.append(q1)
-        questions?.append(q2)
+        questions.append(q1)
+        questions.append(q2)
         
         showNextQuestion()
     }
     
     func showNextQuestion() {
         // Выводит на view следующий вопрос по индексу
-        questionText.text = questions?[0].question
-        print(questions?[0].question)
+        questionText.text = questions[0].question
+        print(questions[0].question)
     }
     
     func showPrevQuestion(){

@@ -11,7 +11,7 @@ import UIKit
 class Question: NSObject {
 
     var question: String?
-    var varinats: [String]?
+    var variants: [String]?
     var rightAnswer: String?
     var userAnswer: String?
     var isRight: Bool = false

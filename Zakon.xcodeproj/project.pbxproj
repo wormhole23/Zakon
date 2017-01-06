@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36E94B7BA5EC83808EBF1FB9 /* Pods_ZakonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163753B8470A43DDB077839D /* Pods_ZakonUITests.framework */; };
+		8426E970D951EB9B96B11BA1 /* Pods_Zakon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91DB5AB64460E9A2685E1BF /* Pods_Zakon.framework */; };
 		B8FEF9BB1E0A481B00C94CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9BA1E0A481B00C94CD1 /* AppDelegate.swift */; };
 		B8FEF9BD1E0A481B00C94CD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9BC1E0A481B00C94CD1 /* ViewController.swift */; };
 		B8FEF9C01E0A481B00C94CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FEF9BE1E0A481B00C94CD1 /* Main.storyboard */; };
@@ -17,9 +19,11 @@
 		B8FEF9E91E0BDA3D00C94CD1 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9E81E0BDA3D00C94CD1 /* QuestionsViewController.swift */; };
 		B8FEF9EB1E0BE39000C94CD1 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9EA1E0BE39000C94CD1 /* ResultViewController.swift */; };
 		B8FEF9ED1E0EEE7C00C94CD1 /* AnswersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEF9EC1E0EEE7C00C94CD1 /* AnswersViewController.swift */; };
+		C5CD568C02043916C2B8DAFE /* Pods_ZakonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AF78AF66EF06901F4BBFA0 /* Pods_ZakonTests.framework */; };
 		CE59A08F1E14017800ADCFB0 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59A08E1E14017800ADCFB0 /* Question.swift */; };
 		CE66E5F91E0D6E1100B06650 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE66E5F81E0D6E1100B06650 /* logo.png */; };
 		CE9FBB431E1FE25A007CD867 /* VariantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FBB421E1FE25A007CD867 /* VariantTableViewCell.swift */; };
+		CE9FBB451E200188007CD867 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE9FBB441E200188007CD867 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0135EBCFB28571E7E938488F /* Pods-Zakon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zakon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zakon/Pods-Zakon.debug.xcconfig"; sourceTree = "<group>"; };
+		09AF78AF66EF06901F4BBFA0 /* Pods_ZakonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZakonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		163753B8470A43DDB077839D /* Pods_ZakonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZakonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD1BD4AC1846948B540B617 /* Pods-ZakonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZakonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZakonUITests/Pods-ZakonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AAA48824E85F3E6AD74FFB56 /* Pods-ZakonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZakonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZakonUITests/Pods-ZakonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B8FEF9B71E0A481B00C94CD1 /* Zakon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zakon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FEF9BA1E0A481B00C94CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8FEF9BC1E0A481B00C94CD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +68,11 @@
 		CE59A08E1E14017800ADCFB0 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CE66E5F81E0D6E1100B06650 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		CE9FBB421E1FE25A007CD867 /* VariantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariantTableViewCell.swift; sourceTree = "<group>"; };
+		CE9FBB441E200188007CD867 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2AAEFCB40D5F3C0428D7086 /* Pods-ZakonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZakonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZakonTests/Pods-ZakonTests.release.xcconfig"; sourceTree = "<group>"; };
+		D852A2C170753D82DCD0EAC5 /* Pods-ZakonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZakonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZakonTests/Pods-ZakonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E91DB5AB64460E9A2685E1BF /* Pods_Zakon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zakon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2225514D8D380AC050FA598 /* Pods-Zakon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zakon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zakon/Pods-Zakon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8426E970D951EB9B96B11BA1 /* Pods_Zakon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5CD568C02043916C2B8DAFE /* Pods_ZakonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E94B7BA5EC83808EBF1FB9 /* Pods_ZakonUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E4CACCF2464CA17F8E6CB4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0135EBCFB28571E7E938488F /* Pods-Zakon.debug.xcconfig */,
+				F2225514D8D380AC050FA598 /* Pods-Zakon.release.xcconfig */,
+				D852A2C170753D82DCD0EAC5 /* Pods-ZakonTests.debug.xcconfig */,
+				D2AAEFCB40D5F3C0428D7086 /* Pods-ZakonTests.release.xcconfig */,
+				1FD1BD4AC1846948B540B617 /* Pods-ZakonUITests.debug.xcconfig */,
+				AAA48824E85F3E6AD74FFB56 /* Pods-ZakonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3F578CA358E1284BCAA7FED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E91DB5AB64460E9A2685E1BF /* Pods_Zakon.framework */,
+				09AF78AF66EF06901F4BBFA0 /* Pods_ZakonTests.framework */,
+				163753B8470A43DDB077839D /* Pods_ZakonUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B8FEF9AE1E0A481B00C94CD1 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +133,8 @@
 				B8FEF9CE1E0A481C00C94CD1 /* ZakonTests */,
 				B8FEF9D91E0A481C00C94CD1 /* ZakonUITests */,
 				B8FEF9B81E0A481B00C94CD1 /* Products */,
+				3E4CACCF2464CA17F8E6CB4F /* Pods */,
+				B3F578CA358E1284BCAA7FED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +151,7 @@
 		B8FEF9B91E0A481B00C94CD1 /* Zakon */ = {
 			isa = PBXGroup;
 			children = (
+				CE9FBB441E200188007CD867 /* GoogleService-Info.plist */,
 				B8FEF9BA1E0A481B00C94CD1 /* AppDelegate.swift */,
 				B8FEF9BC1E0A481B00C94CD1 /* ViewController.swift */,
 				B8FEF9BE1E0A481B00C94CD1 /* Main.storyboard */,
@@ -150,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8FEF9DF1E0A481D00C94CD1 /* Build configuration list for PBXNativeTarget "Zakon" */;
 			buildPhases = (
+				1DDBCD7C876DC855C29FDCF3 /* [CP] Check Pods Manifest.lock */,
 				B8FEF9B31E0A481B00C94CD1 /* Sources */,
 				B8FEF9B41E0A481B00C94CD1 /* Frameworks */,
 				B8FEF9B51E0A481B00C94CD1 /* Resources */,
+				98FEDEA3FFEF5037CC3AA28E /* [CP] Embed Pods Frameworks */,
+				AD5CC05F879F71A507DBB14F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8FEF9E21E0A481D00C94CD1 /* Build configuration list for PBXNativeTarget "ZakonTests" */;
 			buildPhases = (
+				A6F31F3E1BEFEF97B306B630 /* [CP] Check Pods Manifest.lock */,
 				B8FEF9C71E0A481C00C94CD1 /* Sources */,
 				B8FEF9C81E0A481C00C94CD1 /* Frameworks */,
 				B8FEF9C91E0A481C00C94CD1 /* Resources */,
+				34BC38D3B89EFB17A119AF9F /* [CP] Embed Pods Frameworks */,
+				D67BEB25F2DC64A8567FB334 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8FEF9E51E0A481D00C94CD1 /* Build configuration list for PBXNativeTarget "ZakonUITests" */;
 			buildPhases = (
+				A4EC1172E0072238709FF52F /* [CP] Check Pods Manifest.lock */,
 				B8FEF9D21E0A481C00C94CD1 /* Sources */,
 				B8FEF9D31E0A481C00C94CD1 /* Frameworks */,
 				B8FEF9D41E0A481C00C94CD1 /* Resources */,
+				F6622402F0B257EB929F03B2 /* [CP] Embed Pods Frameworks */,
+				1FAF3D7775EB53C913A98330 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +304,7 @@
 			files = (
 				CE66E5F91E0D6E1100B06650 /* logo.png in Resources */,
 				B8FEF9C51E0A481C00C94CD1 /* LaunchScreen.storyboard in Resources */,
+				CE9FBB451E200188007CD867 /* GoogleService-Info.plist in Resources */,
 				B8FEF9C21E0A481C00C94CD1 /* Assets.xcassets in Resources */,
 				B8FEF9C01E0A481B00C94CD1 /* Main.storyboard in Resources */,
 			);
@@ -272,6 +325,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DDBCD7C876DC855C29FDCF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1FAF3D7775EB53C913A98330 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZakonUITests/Pods-ZakonUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34BC38D3B89EFB17A119AF9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZakonTests/Pods-ZakonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98FEDEA3FFEF5037CC3AA28E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zakon/Pods-Zakon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4EC1172E0072238709FF52F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6F31F3E1BEFEF97B306B630 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD5CC05F879F71A507DBB14F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zakon/Pods-Zakon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D67BEB25F2DC64A8567FB334 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZakonTests/Pods-ZakonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6622402F0B257EB929F03B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZakonUITests/Pods-ZakonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8FEF9B31E0A481B00C94CD1 /* Sources */ = {
@@ -432,6 +623,7 @@
 		};
 		B8FEF9E01E0A481D00C94CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0135EBCFB28571E7E938488F /* Pods-Zakon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zakon/Info.plist;
@@ -444,6 +636,7 @@
 		};
 		B8FEF9E11E0A481D00C94CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2225514D8D380AC050FA598 /* Pods-Zakon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zakon/Info.plist;
@@ -456,6 +649,7 @@
 		};
 		B8FEF9E31E0A481D00C94CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D852A2C170753D82DCD0EAC5 /* Pods-ZakonTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -470,6 +664,7 @@
 		};
 		B8FEF9E41E0A481D00C94CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2AAEFCB40D5F3C0428D7086 /* Pods-ZakonTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +679,7 @@
 		};
 		B8FEF9E61E0A481D00C94CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD1BD4AC1846948B540B617 /* Pods-ZakonUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ZakonUITests/Info.plist;
@@ -497,6 +693,7 @@
 		};
 		B8FEF9E71E0A481D00C94CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA48824E85F3E6AD74FFB56 /* Pods-ZakonUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ZakonUITests/Info.plist;

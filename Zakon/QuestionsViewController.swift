@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class QuestionsViewController: UIViewController {
 
@@ -15,9 +16,13 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var variantsTable: UITableView!
     var questions = [Question]()
     var questionIndex = -1
+    var ref: FIRDatabaseReference!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = FIRDatabase.database().reference()
         
         variantsTable.delegate = self
         variantsTable.dataSource = self
@@ -32,22 +37,37 @@ class QuestionsViewController: UIViewController {
     }
     
     func populateQuestions() {
-        // Заполняет массив questions вопросами с базы,
-        // но пока будем вбивать значения вручную
-        let q1 = Question()
-        q1.question = "Вы знаете конституцию РК?"
-        q1.varinats = ["Да", "Нет", "Может быть"]
-        q1.rightAnswer = "Может быть"
+        // Заполняет массив questions вопросами с базы
         
-        let q2 = Question()
-        q2.question = "Легальна ли марихуана в РК?"
-        q2.varinats = ["Да", "Нет"]
-        q2.rightAnswer = "Нет"
+        ref.child("questions").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let ques = snapshot.children
+            
+            while let question = ques.nextObject() as? FIRDataSnapshot{
+                let val = question.value as? NSDictionary
+                let q = Question()
+                q.question = val?["question"] as? String
+                var variants = [String]()
+                for v in (val?["variants"] as? [String: String])! {
+                    variants.append(v.value)
+                    if v.key == "r" {
+                        q.rightAnswer = v.value
+                    }
+                }
+                q.variants = variants
+                
+                self.questions.append(q)
+            }
         
-        questions.append(q1)
-        questions.append(q2)
-        
-        showNextQuestion()
+            self.showNextQuestion()
+            
+            DispatchQueue.main.async {
+                self.variantsTable.reloadData()
+            }
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
     
     func showNextQuestion() {
@@ -107,14 +127,19 @@ extension QuestionsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (questions[questionIndex].varinats!.count)
+        if questions.count > 0 {
+            return (questions[questionIndex].variants!.count)
+        } else {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCell(withIdentifier: "variantCell", for: indexPath) as! VariantTableViewCell
 
-        
-        cell.variantText.text = questions[questionIndex].varinats?[indexPath.row]
+        if questions.count > 0 {
+            cell.variantText.text = questions[questionIndex].variants?[indexPath.row]
+        }
         
         return cell
         

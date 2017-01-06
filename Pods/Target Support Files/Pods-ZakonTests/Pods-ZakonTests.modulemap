@@ -1,0 +1,6 @@
+framework module Pods_ZakonTests {
+  umbrella header "Pods-ZakonTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

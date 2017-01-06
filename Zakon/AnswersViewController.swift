@@ -10,9 +10,14 @@ import UIKit
 
 class AnswersViewController: UIViewController {
 
+    @IBOutlet weak var answersTable: UITableView!
+    var questions = [Question]()
+    var numOfRightAns = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        answersTable.delegate = self
+        answersTable.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -36,3 +41,26 @@ class AnswersViewController: UIViewController {
     */
 
 }
+extension AnswersViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //numOfRows=numOfQuestions+numOfRightAns+(numOfQuestions-numOfRightAns)*2
+        return numOfRightAns//numOfRows
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "questionCell", for: indexPath) as! QuestionsViewCell
+        
+        cell.questionLabel.text = "question,user's answer and right answer(if user's answer not right"
+        
+        return cell
+        
+    }
+    
+    
+}
+

@@ -10,9 +10,13 @@ import UIKit
 
 class AnswersViewController: UIViewController {
 
+    @IBOutlet weak var answersTable: UITableView!
+    var questions = [Question]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        answersTable.delegate = self
+        answersTable.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -36,3 +40,25 @@ class AnswersViewController: UIViewController {
     */
 
 }
+extension AnswersViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (questions.count)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "questionCell", for: indexPath) as! QuestionsViewCell
+        
+        cell.questionLabel.text = questions[indexPath.row].rightAnswer
+        
+        return cell
+        
+    }
+    
+    
+}
+

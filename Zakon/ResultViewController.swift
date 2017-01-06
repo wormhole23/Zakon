@@ -10,17 +10,29 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
     var questions = [Question]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        getResult()
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getResult(){
+        var rightCount = 0
+        for (index, question) in questions.enumerated(){
+            print(question)
+            if(questions[index].userAnswer==questions[index].rightAnswer){
+                rightCount = rightCount+1
+            }
+        }
+        resultLabel.text = String(rightCount)+" iz 10"
     }
     
     @IBAction func answersButton(_ sender: UIButton) {

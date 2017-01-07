@@ -47,13 +47,20 @@ extension AnswersViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (questions.count)
+        /*
+         esli ya pravilno ponela =D, tipa esli user pravilno otvetil to vyvodit vopros i ego otvet (2 row), esli ne pravilno to vopros,otvet usera, pravilnyi otvet (3row)
+    if(questions[questionIndex].userAnswer==questions[questionIndex].rightAnswer){
+         return 2
+        }else{
+         return 3
+         */
+        return questions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "questionCell", for: indexPath) as! QuestionsViewCell
         
-        cell.questionLabel.text = questions[indexPath.row].rightAnswer
+        cell.questionLabel.text = "eee"
         
         return cell
         

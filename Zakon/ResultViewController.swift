@@ -12,6 +12,7 @@ class ResultViewController: UIViewController {
 
     @IBOutlet weak var resultLabel: UILabel!
     var questions = [Question]()
+    var rightCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,6 @@ class ResultViewController: UIViewController {
     }
     
     func getResult(){
-        var rightCount = 0
         for (index, question) in questions.enumerated(){
             print(question)
             if(questions[index].userAnswer==questions[index].rightAnswer){
@@ -33,6 +33,15 @@ class ResultViewController: UIViewController {
             }
         }
         resultLabel.text = String(rightCount)+" iz 10"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if(segue.destination.isKind(of: AnswersViewController.self)){
+            let answersVC = segue.destination as! AnswersViewController
+            //answersVC.delegate = self
+            answersVC.numOfRightAns = rightCount
+        }
     }
     
     @IBAction func answersButton(_ sender: UIButton) {

@@ -251,7 +251,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fSw-kv-sjL" userLabel="questionCell" customClass="QuestionsViewCell" customModule="Zakon" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="questionCell" id="fSw-kv-sjL" userLabel="questionCell" customClass="QuestionsViewCell" customModule="Zakon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="341" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fSw-kv-sjL" id="ZL8-d9-Fry">
@@ -289,6 +289,6 @@
         <image name="logo.png" width="963" height="963"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="msV-MP-TWP"/>
+        <segue reference="mam-7Y-9nn"/>
     </inferredMetricsTieBreakers>
 </document>

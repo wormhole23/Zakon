@@ -12,6 +12,7 @@ class AnswersViewController: UIViewController {
 
     @IBOutlet weak var answersTable: UITableView!
     var questions = [Question]()
+    var numOfRightAns = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,20 +48,14 @@ extension AnswersViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        /*
-         esli ya pravilno ponela =D, tipa esli user pravilno otvetil to vyvodit vopros i ego otvet (2 row), esli ne pravilno to vopros,otvet usera, pravilnyi otvet (3row)
-    if(questions[questionIndex].userAnswer==questions[questionIndex].rightAnswer){
-         return 2
-        }else{
-         return 3
-         */
-        return questions.count
+        //numOfRows=numOfQuestions+numOfRightAns+(numOfQuestions-numOfRightAns)*2
+        return numOfRightAns//numOfRows
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "questionCell", for: indexPath) as! QuestionsViewCell
         
-        cell.questionLabel.text = "eee"
+        cell.questionLabel.text = "question,user's answer and right answer(if user's answer not right"
         
         return cell
         
